@@ -1,0 +1,63 @@
+
+
+/* Sets a retro gradient background, monospace font for readability, text color, padding, and line spacing */
+body {
+    background: linear-gradient(to right, #1c1c1c, #3a3a3a); /* Gradient background from dark to slightly lighter grey */
+    font-family: 'Courier New', Courier, monospace; /* Monospace font for a retro tech look */
+    color: #f1f1f1; /* Light grey text color for contrast on dark background */
+    padding: 2rem; /* Adds spacing around the content */
+    line-height: 1.6; /* Increases spacing between lines for better readability */
+}
+
+/* Styles headings with bold retro font, neon color, and glowing shadow */
+h1, h2 {
+    font-family: 'Arial Black', Gadget, sans-serif; /* Heavy, bold typeface for titles */
+    color: #ff4ecb; /* Bright pink color for standout headings */
+    text-shadow: 2px 2px #00ffff; /* Cyan glow effect for 90s aesthetic */
+}
+
+/* Styles each section block */
+section {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background for a layered effect */
+    border: 2px solid #00ffff; /* Cyan border for contrast and 90s flair */
+    border-radius: 10px; /* Rounded corners for a softer box look */
+    padding: 1.5rem; /* Inner spacing for breathing room */
+    margin-bottom: 2rem; /* Space below each section */
+}
+
+/* Styles inline code snippets */
+code {
+    background-color: #222; /* Dark background for contrast */
+    color: #00ffcc; /* Bright teal text to stand out */
+    padding: 0.2rem 0.4rem; /* Padding around code text */
+    border-radius: 5px; /* Slightly rounded corners */
+}
+
+/* Styles code blocks */
+pre {
+    background-color: #111; /* Very dark background to highlight the code */
+    padding: 1rem; /* Padding around the entire code block */
+    border-radius: 10px; /* Rounded edges */
+    overflow-x: auto; /* Allows scrolling for long lines */
+}
+
+/* Styles unordered list bullets and spacing */
+ul {
+    list-style-type: square; /* Uses square bullets instead of default circles */
+    margin-left: 1.5rem; /* Indents list from the left */
+}
+
+/* Highlights strong (bold) text */
+strong {
+    color: #ffe600; /* Bright yellow for emphasis */
+}
+
+/* Styles all links */
+a {
+    color: #00ffff; /* Neon cyan for clickable links */
+}
+
+/* Changes link color when hovered */
+a:hover {
+    color: #ff4ecb; /* Neon pink hover effect */
+}

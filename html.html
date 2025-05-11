@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+</body>
+    <h1>HTML Notes - Beginner to Advanced</h1>
+
+    <!-- What is HTML -->
+    <section>
+        <h2>What is HTML?</h2>
+        <p>HTML (HyperText Markup Language) is the backbone of every website. It tells the browser what to display — like text, images, links, forms, etc.</p>
+        <p>It uses "tags" (like <code>&lt;p&gt;</code> and <code>&lt;img&gt;</code>) to define elements on the page.</p>
+        <p><strong>Real-World Use:</strong> HTML is used to build the structure of every web page — from basic landing pages to complex web apps.</p>
+    </section>
+
+    <!-- Basic HTML Skeleton -->
+    <section>
+        <h2>HTML Document Structure</h2>
+        <pre><code>&lt;!DOCTYPE html&gt;  &lt;!-- Tells the browser this is an HTML5 document --&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt; &lt;!-- Character encoding --&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; &lt;!-- Responsive design --&gt;
+    &lt;title&gt;Page Title&lt;/title&gt; &lt;!-- Tab title --&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;!-- Content goes here --&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+    </section>
+
+    <!-- Common HTML Tags -->
+    <section>
+        <h2>Common Tags</h2>
+        <ul>
+            <li><code>&lt;h1&gt; to &lt;h6&gt;</code> – Headings (used for titles and hierarchy)</li>
+            <li><code>&lt;p&gt;</code> – Paragraph</li>
+            <li><code>&lt;a href="url"&gt;</code> – Link to another page or site</li>
+            <li><code>&lt;img src="image.jpg" alt="description"&gt;</code> – Show images</li>
+            <li><code>&lt;br&gt;</code> – Line break</li>
+            <li><code>&lt;strong&gt;</code> and <code>&lt;em&gt;</code> – Bold and italic text (for emphasis)</li>
+            <li><code>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;</code> – Lists (unordered and ordered)</li>
+        </ul>
+        <p><strong>Use Case:</strong> Use these tags to structure any webpage's main content, from blog posts to product descriptions.</p>
+    </section>
+
+    <!-- Forms -->
+    <section>
+        <h2>Forms (User Input)</h2>
+        <p>Used to collect user data like emails, feedback, search queries, etc.</p>
+        <pre><code>&lt;form action="/submit" method="POST"&gt;
+  &lt;label&gt;Name: &lt;input type="text" name="name"&gt;&lt;/label&gt;
+  &lt;input type="submit" value="Send"&gt;
+&lt;/form&gt;
+</code></pre>
+        <p><strong>Use Case:</strong> Forms power login systems, contact pages, checkout screens, etc.</p>
+    </section>
+
+    <!-- Semantic HTML -->
+    <section>
+        <h2>Semantic HTML</h2>
+        <p>Tags that give meaning to the content: <code>&lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;section&gt;, &lt;footer&gt;</code></p>
+        <p>They improve SEO and accessibility.</p>
+        <p><strong>Use Case:</strong> Essential for clean, maintainable code in real-world apps and professional-grade sites.</p>
+    </section>
+
+    <!-- Advanced HTML Features -->
+    <section>
+        <h2>Advanced Features</h2>
+        <ul>
+            <li><code>&lt;video&gt;, &lt;audio&gt;</code> – Embed media</li>
+            <li><code>&lt;canvas&gt;</code> – For drawing/animations with JavaScript</li>
+            <li><code>&lt;iframe&gt;</code> – Embed another webpage</li>
+            <li><code>&lt;meta&gt;</code> – For SEO, responsive design, sharing info</li>
+            <li><code>&lt;data&gt;</code> and <code>data-attributes</code> – Store custom data for scripts</li>
+        </ul>
+        <p><strong>Use Case:</strong> Used in interactive apps, games, social media embeds, analytics, and dynamic content.</p>
+    </section>
+
+    <!-- Developer Tips -->
+    <section>
+        <h2>Pro Tips</h2>
+        <ul>
+            <li>Use semantic tags for SEO & clarity</li>
+            <li>Always use alt text on images for accessibility</li>
+            <li>Structure content with headings logically (only one <code>&lt;h1&gt;</code> per page!)</li>
+            <li>Validate your HTML with W3C Validator</li>
+            <li>Use browser DevTools (Right-click → Inspect)</li>
+        </ul>
+    </section>
+</body>
+</html>
