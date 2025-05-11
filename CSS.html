@@ -1,0 +1,153 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CSS Notes - FreeCodeCamp</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <h1>CSS Notes - Beginner to Advanced</h1>
+
+  <section>
+    <h2>What is CSS?</h2>
+    <p>CSS (Cascading Style Sheets) controls how HTML elements look on the page. It defines layout, colors, fonts, spacing, animations, and much more.</p>
+    <p><strong>Why it matters:</strong> Without CSS, all websites would look like plain text documents. CSS creates the design and visual experience.</p>
+  </section>
+
+  <section>
+    <h2>How CSS Works</h2>
+    <ul>
+      <li><strong>Selectors</strong>: Target which HTML elements you want to style.</li>
+      <li><strong>Properties</strong>: Define what style to apply (like color, font-size).</li>
+      <li><strong>Values</strong>: Assign the desired value to that property.</li>
+    </ul>
+    <pre><code>p {
+  color: red;
+}</code></pre>
+    <p><strong>Explanation:</strong> This sets all &lt;p&gt; elements to display red text.</p>
+  </section>
+
+  <section>
+    <h2>Ways to Use CSS</h2>
+    <ul>
+      <li><strong>Inline:</strong> Style added directly in the tag using the "style" attribute. Bad practice for big projects.</li>
+      <li><strong>Internal:</strong> CSS inside a &lt;style&gt; tag in the HTML head. OK for small pages.</li>
+      <li><strong>External:</strong> Best practice. Link to a .css file using &lt;link&gt; in your HTML head.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Common Selectors</h2>
+    <ul>
+      <li><code>*</code> – Universal selector (selects everything)</li>
+      <li><code>p</code> – Element selector</li>
+      <li><code>.class</code> – Selects elements with that class</li>
+      <li><code>#id</code> – Selects element with that ID</li>
+      <li><code>div p</code> – Descendant selector</li>
+      <li><code>div &gt; p</code> – Direct child selector</li>
+      <li><code>a:hover</code> – Pseudo-class (styles based on user interaction)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Box Model</h2>
+    <p>Everything in CSS is a box.</p>
+    <ul>
+      <li><strong>Content</strong>: The actual text/image inside</li>
+      <li><strong>Padding</strong>: Space between content and border</li>
+      <li><strong>Border</strong>: Edge around the element</li>
+      <li><strong>Margin</strong>: Space outside the element (between elements)</li>
+    </ul>
+    <p><strong>Why it matters:</strong> Understanding box model is key to controlling layout and spacing.</p>
+  </section>
+
+  <section>
+    <h2>Units</h2>
+    <ul>
+      <li><code>px</code> – Pixels (absolute)</li>
+      <li><code>em</code> – Relative to parent font-size</li>
+      <li><code>rem</code> – Relative to root font-size (recommended)</li>
+      <li><code>%</code> – Relative to parent size</li>
+      <li><code>vh/vw</code> – Viewport height/width (responsive design)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Positioning</h2>
+    <ul>
+      <li><strong>Static</strong>: Default. Elements follow normal flow.</li>
+      <li><strong>Relative</strong>: Move based on normal position.</li>
+      <li><strong>Absolute</strong>: Position relative to closest parent with position set.</li>
+      <li><strong>Fixed</strong>: Fixed to the screen, doesn't move.</li>
+      <li><strong>Sticky</strong>: Sticks to screen after scroll starts.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Flexbox</h2>
+    <p>Powerful layout system for 1D (rows or columns).</p>
+    <pre><code>display: flex;
+justify-content: center;
+align-items: center;</code></pre>
+    <p><strong>Use Case:</strong> Center elements, create navbars, responsive layouts.</p>
+  </section>
+
+  <section>
+    <h2>Grid</h2>
+    <p>Layout system for 2D (rows and columns).</p>
+    <pre><code>display: grid;
+grid-template-columns: repeat(3, 1fr);</code></pre>
+    <p><strong>Use Case:</strong> Design complex layouts like dashboards, image galleries.</p>
+  </section>
+
+  <section>
+    <h2>Media Queries (Responsive Design)</h2>
+    <pre><code>@media (max-width: 768px) {
+  body {
+    font-size: 0.9rem;
+  }
+}</code></pre>
+    <p><strong>Why:</strong> CSS that adapts to different screen sizes (mobile, tablet, desktop).</p>
+  </section>
+
+  <section>
+    <h2>Pseudo-classes & Pseudo-elements</h2>
+    <ul>
+      <li><code>:hover</code>, <code>:active</code>, <code>:focus</code> – interaction states</li>
+      <li><code>::before</code>, <code>::after</code> – insert content via CSS</li>
+    </ul>
+    <pre><code>a::after {
+  content: " 🔗";
+}</code></pre>
+  </section>
+
+  <section>
+    <h2>Animations & Transitions</h2>
+    <p><strong>Transitions:</strong> Animate change in properties smoothly</p>
+    <pre><code>button {
+  transition: background-color 0.3s ease;
+}</code></pre>
+    <p><strong>Animations:</strong> Use keyframes for more control</p>
+    <pre><code>@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}</code></pre>
+  </section>
+
+  <section>
+    <h2>Best Practices</h2>
+    <ul>
+      <li>Use external CSS files for organization</li>
+      <li>Stick with classes for styling (avoid IDs)</li>
+      <li>Use <code>rem</code> or <code>%</code> for responsive scaling</li>
+      <li>Keep styles consistent and reusable</li>
+      <li>Organize your CSS top-down (layout → modules → components → utilities)</li>
+    </ul>
+  </section>
+
+</body>
+</html>
