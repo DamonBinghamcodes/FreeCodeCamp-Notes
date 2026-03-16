@@ -1,6 +1,11 @@
-h1 {
-    color: blue;
-    display: flex;
-    justify-content: center;
-    margin: 30px 50px;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: azure;
+}
+
+.hero-title {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: start;
+    width: 10%;
 }
