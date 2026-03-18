@@ -20,6 +20,11 @@ body {
     border: 5px solid red;
     padding: 20px;
     transform: 5s ease;
+    text-decoration: none;
+}
+
+.hero-title, a {
+    text-decoration: none;
 }
 
 .hero-title:hover {
